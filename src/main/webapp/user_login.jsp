@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@page isELIgnored="false"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,7 +36,7 @@ errorMsg }">
 var="errorMsg" scope="session" />
 </c:if>
 <form
-action="doctorLogin" method="post">
+action="userLogin" method="post">
 <div class="mb3">
 <label
 class="form-label">Email address</label> <input required
@@ -50,6 +52,9 @@ name="password" type="password" class="form-control">
 <button
 type="submit" class="btn bg-success text-white col-md12">Login</button>
 </form>
+<br> Don't have an
+account? <a href="signup.jsp"
+class="textdecoration-none"> create one</a>
 </div>
 </div>
 </div>

@@ -14,7 +14,6 @@ box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 </head>
 <body>
 <%@include file="component/navbar.jsp"%>
-
 <section>
 <div class="container p-5">
 <div class="row">

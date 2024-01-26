@@ -1,4 +1,4 @@
-
+<%@page import="com.db.DBConnect"%>
 <%@page import="java.sql.Connection"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 pageEncoding="ISO-8859-1"%>
@@ -11,6 +11,7 @@ pageEncoding="ISO-8859-1"%>
 </head>
 <body>
 <%@include file="component/navbar.jsp"%>
+
  <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
