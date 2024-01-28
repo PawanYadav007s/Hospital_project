@@ -146,10 +146,10 @@
             <div class="logo"><a href="index.jsp"><i class="fa-solid fa-house-chimney-medical fa-beat" style="color: #04c3a3;"></i>  Global<span>Hospital</span></a></div>
             <ul class="menu">
                 <li><a href="index.jsp" class="menu-btn">Home</a></li>
-                <li><a href="doctor_login.jsp" class="menu-btn"><i class="fa-solid fa-user-doctor fa-beat-fade" style="color: #74C0FC;"></i> Doctor</a></li>
-                <li><a href="slot_booking.jsp" class="menu-btn">View Doctor</a></li>
+                <li><a href="doctor.jsp" class="menu-btn"><i class="fa-solid fa-user-doctor fa-beat-fade" style="color: #74C0FC;"></i> Doctor</a></li>
+                <li><a href="view_doctor.jsp" class="menu-btn">View Doctor</a></li>
                 <li><a href="patient.jsp" class="menu-btn">patient</a></li>
-                <li><a class="dropdownitem" href="../adminLogout">Logout</a></li>
+                <li><a class="dropdownitem" href="../adminLogout"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>

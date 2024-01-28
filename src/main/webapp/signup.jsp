@@ -25,12 +25,12 @@
 						<p class="fs-4 textcenter">User Register</p>
 						<c:if test="${not empty
 sucMsg }">
-							<p class="textcenter text-success fs-3">${sucMsg}</p>
+							<p class="textcenter text-success ">${sucMsg}</p>
 							<c:remove var="sucMsg" scope="session" />
 						</c:if>
 						<c:if test="${not empty
 errorMsg }">
-							<p class="textcenter text-danger fs-3">${errorMsg}</p>
+							<p class="textcenter text-danger ">${errorMsg}</p>
 							<c:remove var="errorMsg" scope="session" />
 						</c:if>
 						<form action="user_register" method="post">
@@ -49,6 +49,9 @@ errorMsg }">
 							<br>
 							<br>
 							<button type="submit" class="btn bg-success text-white col-md12">Register</button>
+							<br>
+							<br> Already have an account? <a href="user_login.jsp"
+								class="textdecoration-none"> Sign in</a>
 						</form>
 					</div>
 				</div>

@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@page isELIgnored="false"%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -144,13 +146,40 @@
         <div class="max-width">
             <div class="logo"><a href="index.jsp"><i class="fa-solid fa-house-chimney-medical fa-beat" style="color: #04c3a3;"></i>  Global<span>Hospital</span></a></div>
             <ul class="menu">
-                <li><a href="index.jsp" class="menu-btn">Home</a></li>
+            
+            <c:if test="${empty userObj }">
+            
+            
+                  <li><a href="slot_booking.jsp" class="menu-btn">Home</a></li>
                 <li><a href="doctor_login.jsp" class="menu-btn"><i class="fa-solid fa-user-doctor fa-beat-fade" style="color: #74C0FC;"></i> Doctor</a></li>
                 <li><a href="user_login.jsp" class="menu-btn">User</a></li>
-                <li><a href="slot_booking.jsp" class="menu-btn">Slot Booking</a></li>
+                <li><a href="user_appointment.jsp" class="menu-btn">Appointment Booking</a></li>
+                
                 <li><a href="contact.jsp" class="menu-btn">Contact</a></li>
                 <li><a href="admin_login.jsp" class="menu-btn"><i class="fa-solid fa-lock fa-bounce"></i> Admin</a></li>
                 
+            
+            </c:if>
+          
+        <c:if test="${not empty userObj}">
+        
+        <li><a href="slot_booking.jsp" class="menu-btn">Appointment</a></li>
+        
+        <li><a href="slot_booking.jsp" class="menu-btn">View Appointment</a></li>
+        
+        
+        <div class="btn-group" style="padding-left: 30px;">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    ${userObj.fullName }
+  </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" ">
+    <li><a class="dropdown-item"href="change_password.jsp">change Password</a></li>
+    <li><a class="dropdown-item" href="userLogout">Logout</a></li>
+
+  </ul>
+  </div>
+        </c:if>   
+             
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>

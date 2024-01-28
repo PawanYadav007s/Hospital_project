@@ -23,14 +23,12 @@
 					<div class="card paint-card">
 						<div class="card-body">
 							<p class="fs-4 textcenter">Admin Login</p>
-							<c:if test="${not empty
-succMsg }">
-								<p class="textcenter text-success fs-3">${succMsg}</p>
+							<c:if test="${not empty succMsg }">
+								<p class="textcenter text-success ">${succMsg}</p>
 								<c:remove var="succMsg" scope="session" />
 							</c:if>
-							<c:if test="${not empty
-errorMsg }">
-								<p class="textcenter text-danger fs-5">${errorMsg}</p>
+							<c:if test="${not empty errorMsg }">
+								<p class="textcenter text-danger ">${errorMsg}</p>
 								<c:remove var="errorMsg" scope="session" />
 							</c:if>
 							<form action="adminLogin" method="post">
@@ -42,6 +40,8 @@ errorMsg }">
 									<label class="form-label">Password</label> <input required
 										name="password" type="password" class="form-control">
 								</div>
+								<br>
+								<br>
 								<button type="submit" class="btn bg-success text-white col-md12">Login</button>
 							</form>
 						</div>
