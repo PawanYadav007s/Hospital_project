@@ -147,7 +147,7 @@ pageEncoding="ISO-8859-1"%>
             <div class="logo"><a href="index.jsp"><i class="fa-solid fa-house-chimney-medical fa-beat" style="color: #04c3a3;"></i>  Global<span>Hospital</span></a></div>
             <ul class="menu">
             
-            <c:if test="${empty userObj }">
+            <c:if test="${empty doctObj }">
             
             
                   <li><a href="index.jsp" class="menu-btn">Home</a></li>
@@ -161,20 +161,20 @@ pageEncoding="ISO-8859-1"%>
             
             </c:if>
           
-        <c:if test="${not empty userObj}">
+        <c:if test="${not empty doctObj}">
         
-        <li><a href="slot_booking.jsp" class="menu-btn">Appointment</a></li>
+        <li><a href="index.jsp" class="menu-btn">Home</a></li>
         
-        <li><a href="view_appointment.jsp" class="menu-btn">View Appointment</a></li>
+        <li><a href="patient.jsp" class="menu-btn">Patient</a></li>
         
         
         <div class="btn-group" style="padding-left: 30px;">
   <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-    ${userObj.fullName }
+    ${doctObj.fullName }
   </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" ">
-    <li><a class="dropdown-item"href="change_password.jsp">change Password</a></li>
-    <li><a class="dropdown-item" href="userLogout">Logout</a></li>
+    <li><a class="dropdown-item"href="edit_profile.jsp">Edit Profile</a></li>
+    <li><a class="dropdown-item" href="../doctorLogout">Logout</a></li>
 
   </ul>
   </div>

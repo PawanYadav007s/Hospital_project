@@ -18,7 +18,7 @@ pageEncoding="ISO-8859-1"%>
                 <div class="text-1">Welcome.. </div>
                 <div class="text-2">Making Health</div>
                 <div class="text-3">Care Better Together<span class="typing"></span></div>
-                <a href="slot_booking.jsp"><i class="fa-solid fa-calendar-check fa-shake fa-lg" style="color: #ffffff;"></i> Take Appointment...</a>
+                <a href="user_login.jsp"><i class="fa-solid fa-calendar-check fa-shake fa-lg" style="color: #ffffff;"></i> Take Appointment...</a>
             </div>
         </div>
     </section>

@@ -228,7 +228,7 @@ public class DoctorDao {
 	public int countUSer() {
 		int i = 0;
 		try {
-			String sql = "select * from user_dtls";
+			String sql = "select * from user_details";
 			PreparedStatement ps = conn.prepareStatement(sql);
 			ResultSet rs = ps.executeQuery();
 			while (rs.next()) {

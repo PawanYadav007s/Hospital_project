@@ -27,6 +27,8 @@ pageEncoding="ISO-8859-1"%>
 		</c:if>
 		<div class="container p-5">
 			<p class="text-center fs-3 fw-bold">Admin Dashboard</p>
+			
+			
 
 			<%
 			DoctorDao dao = new DoctorDao(DBConnect.getConn());

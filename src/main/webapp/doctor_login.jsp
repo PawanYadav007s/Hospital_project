@@ -22,11 +22,11 @@
 					<div class="card-body">
 						<p class="fs-4 textcenter">Doctor Login</p>
 						<c:if test="${not empty succMsg }">
-							<p class="textcenter text-success fs-3">${succMsg}</p>
+							<p class="textcenter text-success ">${succMsg}</p>
 							<c:remove var="succMsg" scope="session" />
 						</c:if>
 						<c:if test="${not empty errorMsg }">
-							<p class="textcenter text-danger fs-5">${errorMsg}</p>
+							<p class="textcenter text-danger ">${errorMsg}</p>
 							<c:remove var="errorMsg" scope="session" />
 						</c:if>
 						<form action="doctorLogin" method="post">
