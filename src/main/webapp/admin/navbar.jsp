@@ -143,7 +143,7 @@
     </div>
     <nav class="navbar1">
         <div class="max-width">
-            <div class="logo"><a href="index.jsp"><i class="fa-solid fa-house-chimney-medical fa-beat" style="color: #04c3a3;"></i>  Global<span>Hospital</span></a></div>
+            <div class="logo"><a href="index.jsp"><i class="fa-solid fa-house-chimney-medical fa-beat" style="color: #04c3a3;"></i>  Shraddha <span> Hospital</span></a></div>
             <ul class="menu">
                 <li><a href="index.jsp" class="menu-btn">Home</a></li>
                 <li><a href="doctor.jsp" class="menu-btn"><i class="fa-solid fa-user-doctor fa-beat-fade" style="color: #74C0FC;"></i> Doctor</a></li>

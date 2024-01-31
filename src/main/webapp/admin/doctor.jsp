@@ -30,6 +30,8 @@
 					<div class="card-body">
 						<p class="fs-3 text-center fw-bold">Add Doctor</p>
 						
+						
+						
 						<form action="../addDoctor" method="post">
 							<div class="mb3">
 								<label class="form-label">Full Name</label> <input type="text"

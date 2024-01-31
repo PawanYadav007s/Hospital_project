@@ -1,7 +1,7 @@
 <%@page import="com.db.DBConnect"%>
 <%@page import="com.dao.DoctorDao"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 
 
 <!DOCTYPE html>
@@ -27,12 +27,10 @@ pageEncoding="ISO-8859-1"%>
 		</c:if>
 		<div class="container p-5">
 			<p class="text-center fs-3 fw-bold">Admin Dashboard</p>
-			
-			
 
-			<%
-			DoctorDao dao = new DoctorDao(DBConnect.getConn());
-			%>
+				<%
+					DoctorDao dao = new DoctorDao(DBConnect.getConn());
+				%>
 
 			<br> <br>
 
@@ -44,7 +42,6 @@ pageEncoding="ISO-8859-1"%>
 								<i class="fa-solid fa-user-doctor fa-2xl"></i><br> <br>
 								<p class="fs-4 textcenter">
 									Doctor <br><%=dao.countDoctor()%>
-									
 							</center>
 							</p>
 						</div>
@@ -85,7 +82,6 @@ pageEncoding="ISO-8859-1"%>
 									<i class="fa-solid fa-user-doctor fa-2xl"></i><br> <br>
 									<p class="fs-4 textcenter">
 										specialist surgeon <br><%=dao.countSpecialist()%>
-										
 								</center>
 								</p>
 							</div>

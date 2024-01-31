@@ -109,32 +109,26 @@
         <footer>
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-sm-4 col-md-3 item">
-                        <h3>Services</h3>
+                    <div class="col-sm-4 col-md-3 item ">
+                        <h3 >About Us</h3>
                         <ul>
-                            <li><a href="#">Keyword</a></li>
-                            <li><a href="#">Keyword</a></li>
-                            <li><a href="#">Keyword</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4 col-md-3 item">
-                        <h3>About</h3>
-                        <ul>
-                            <li><a href="#">Hospital]</a></li>
+                            <li ><a href="#">Home</a></li>
                             <li><a href="#">Doctors</a></li>
-                            <li><a href="#">facilities</a></li>
+                            <li><a href="#">Book Appointment</a></li>
                         </ul>
                     </div>
-                    <div class="col-sm-4 col-md-3 item">
+                    
+                    <div class="col-sm-4 col-md-3 item ">
                         <h3>Contact</h3>
                         <ul>
-                            <li><a href="#">FAcebook</a></li>
+                            <li><a href="#">Facebook</a></li>
                             <li><a href="#">Whatsapp</a></li>
                             <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Linkedlin</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-3 item social"><i class="fa-brands fa-facebook" style="color: #0288ed;"></i> <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-instagram" style="color: #d8314a;"></i></a>
-                        <p class="copyright">Company Pawan Yadav © 2024</p>
+                    <div class="col-lg-3 item social fs-4"><i class="fa-brands fa-facebook" style="color: #0288ed;"></i> <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-instagram" style="color: #d8314a;"></i> <i class="fa-brands fa-whatsapp fa-lg" style="color: #14d299;"></i></a>
+                        <p class="copyright  fs-5"> Pawan Yadav © 2024  <br>  All Rights Reserved..</p>
                     </div>
                 </div>
             </div>

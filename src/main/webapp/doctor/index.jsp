@@ -26,6 +26,14 @@
 	<br>
 	<section>
 		<p class="text-center fs-3">Doctor Dashboard</p>
+		<c:if test="${not empty errorMsg}">
+						<p class="fs-4 text-center text-danger">${errorMsg}</p>
+						<c:remove var="errorMsg" scope="session" />
+					</c:if>
+					<c:if test="${not empty succMsg}">
+						<p class=" fs-4 text-center text-success">${succMsg}</p>
+						<c:remove var="succMsg" scope="session" />
+					</c:if>
 		<%
 		Doctor d = (Doctor) session.getAttribute("doctObj");
 		DoctorDao dao = new DoctorDao(DBConnect.getConn());

@@ -144,7 +144,7 @@ pageEncoding="ISO-8859-1"%>
     </div>
     <nav class="navbar1">
         <div class="max-width">
-            <div class="logo"><a href="index.jsp"><i class="fa-solid fa-house-chimney-medical fa-beat" style="color: #04c3a3;"></i>  Global<span>Hospital</span></a></div>
+            <div class="logo"><a href="index.jsp"><i class="fa-solid fa-house-chimney-medical fa-beat" style="color: #04c3a3;"></i>  Shraddha <span> Hospital</span></a></div>
             <ul class="menu">
             
             <c:if test="${empty userObj }">
